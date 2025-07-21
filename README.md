@@ -20,6 +20,6 @@ Java 21 - https://adoptium.net/en-GB/temurin/releases (once downloaded, open the
 12. Boot up minecraft and go to multiplayer, and add server: server address is localhost
 13. Once the server has booted up, you should be able to join. Enjoy!
 
-#Commands
-/teleport -> teleports you to a random spot in the world
-/startborder -> sets up the 3x3 border at the beginning (do once you found a good spot to start)
+# Commands (for everytime you need to start a new world)
+1. /teleport -> teleports you to a random spot in the world
+2. /startborder -> sets up the 3x3 border at the beginning (do once you found a good spot to start)
