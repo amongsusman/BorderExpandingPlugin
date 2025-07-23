@@ -23,3 +23,15 @@ Java 21 - https://adoptium.net/en-GB/temurin/releases (once downloaded, open the
 # Commands (for everytime you need to start a new world)
 1. /teleport -> teleports you to a random spot in the world
 2. /startborder -> sets up the 3x3 border at the beginning (do once you found a good spot to start)
+
+# Prerequisites for the Twitch Part
+You need to download the following:
+1. Python (if you don't have already) - https://www.python.org/downloads/
+
+# Twitch Instructions
+1. Download the python file.
+2. Open the python file and make sure you edit the following variables: CLIENT_ID, CLIENT_SECRET, STREAMER_LOGIN
+3. To figure out what to edit the variables to, you must open Twitch Developer Console and register for an application: name can be whatever, OAuth Redirect URL should be http://localhost:17563, category should be Website Integration, Client Type is Confidential. 
+4. Once you finish it, save it and then go back in your applications to find the Client ID and Client_Secret, streamer login is just your username on twitch.
+5. Lastly, just make sure this python file is in your downloads folder along with the MinecraftServer folder. 
+6. Open up a second command prompt while the other one is running and cd until you get to Downloads, then just type in: python twitch.py
