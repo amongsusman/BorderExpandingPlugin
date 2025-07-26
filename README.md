@@ -24,9 +24,10 @@ You need to download the following:
 1. Python (if you don't have already) - https://www.python.org/downloads/
 
 # Twitch Instructions
-1. Download the python file.
-2. Open the python file and make sure you edit the following variables: CLIENT_ID, CLIENT_SECRET, STREAMER_LOGIN
-3. To figure out what to edit the variables to, you must open Twitch Developer Console and register for an application: name can be whatever, OAuth Redirect URL should be http://localhost:17563, category should be Website Integration, Client Type is Confidential. 
-4. Once you finish it, save it and then go back in your applications to find the Client ID and Client_Secret, streamer login is just your username on twitch.
-5. Lastly, just make sure this python file is in your downloads folder along with the MinecraftServer folder. 
-6. Open up a second command prompt while the other one is running and cd until you get to Downloads, then just type in: python twitch.py
+1. Find the python file inside the MinecraftServer folder.
+2. Run the following command in your Command Prompt once you are inside the Minecraft Server folder: pip install twitchAPI 
+3. Open the python file and make sure you edit the following variables: CLIENT_ID, CLIENT_SECRET, STREAMER_LOGIN
+4. To figure out what to edit the variables to, you must open Twitch Developer Console and register for an application: name can be whatever, OAuth Redirect URL should be http://localhost:17563, category should be Website Integration, Client Type is Confidential. 
+5. Once you finish it, save it and then go back in your applications to find the Client ID and Client_Secret, streamer login is just your username on twitch.
+6. Lastly, just make sure this python file is in your downloads folder along with the MinecraftServer folder. 
+7. Open up a second command prompt while the other one is running and cd until you get to Downloads, then just type in: python twitch.py
