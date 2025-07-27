@@ -30,4 +30,4 @@ You need to download the following:
 4. To figure out what to edit the variables to, you must open Twitch Developer Console and register for an application: name can be whatever, OAuth Redirect URL should be http://localhost:17563, category should be Website Integration, Client Type is Confidential. 
 5. Once you finish it, save it and then go back in your applications to find the Client ID and Client_Secret, streamer login is just your username on twitch.
 6. Lastly, just make sure this python file is in your downloads folder along with the MinecraftServer folder. 
-7. Open up a second command prompt while the other one is running and cd until you get to Downloads, then just type in: python twitch.py
+7. Open up a second command prompt while the other one is running and cd until you get to MinecraftServer, then just type in: python twitch.py
