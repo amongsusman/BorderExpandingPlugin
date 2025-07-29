@@ -8,29 +8,30 @@ from twitchAPI.object.eventsub import (
     ChannelSubscriptionGiftEvent,
 )
 
-CLIENT_ID = 'qemqptjdkahr3rteivz4kf1ktkwt1i'
-CLIENT_SECRET = 'ofaw1dcz62aogk0iuij179phuphgkv'
-STREAMER_LOGIN = 'tylerthemongus'
+CLIENT_ID = ''
+CLIENT_SECRET = ''
+STREAMER_LOGIN = ''
 
-FILE_PATH = 'signal.txt' 
+FILE_PATH = '' 
 
 # ----- Event Handlers -----
 
 async def on_redeem(event: ChannelPointsCustomRewardRedemptionAddEvent):
-    print(f"Channel point redeemed: {event.reward.title} by {event.user_name}")
-    if event.reward.title.lower() == "expand border":
+    if event.event.reward.title.lower() == "expand border":
         with open(FILE_PATH, 'w') as f:
-            f.write('channel_point_redeem\n')
+            f.write('border_redeem\n')
+    elif event.event.reward.title.lower() == "drop all minecraft food":
+        with open(FILE_PATH, 'w') as f:
+            f.write('drop_food\n')
 
 async def on_subscribe(event: ChannelSubscribeEvent):
-    print(f"New sub! {event.user_name} just subscribed (tier {event.tier})")
     with open(FILE_PATH, 'w') as f:
         f.write('subscription\n')
 
 async def on_gift_sub(event: ChannelSubscriptionGiftEvent):
-    print(f"{event.user_name} gifted a sub! Total gifts this event: {event.total}")
     with open(FILE_PATH, 'w') as f:
         f.write('gift_sub\n')
+        f.write(str(event.event.total) + "\n")
 
 # ----- Main Async Routine -----
 
@@ -42,7 +43,7 @@ async def main():
         [
             AuthScope.CHANNEL_READ_REDEMPTIONS,
             AuthScope.CHANNEL_READ_SUBSCRIPTIONS,
-        ]
+        ],
     )
     token, refresh_token = await auth.authenticate()
     await twitch.set_user_authentication(
