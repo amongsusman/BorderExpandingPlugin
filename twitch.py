@@ -10,9 +10,9 @@ from twitchAPI.object.eventsub import (
 
 CLIENT_ID = ''
 CLIENT_SECRET = ''
-STREAMER_LOGIN = ''
+STREAMER_LOGIN = 'ihavenoeyebrows'
 
-FILE_PATH = '' 
+FILE_PATH = 'C:\\Users\\roman\\Downloads\\Captive\\signal.txt' 
 
 # ----- Event Handlers -----
 
