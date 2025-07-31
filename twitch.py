@@ -21,21 +21,27 @@ async def on_redeem(event: ChannelPointsCustomRewardRedemptionAddEvent):
     if event.event.reward.title.lower() == "expand border":
         with open(FILE_PATH, 'w') as f:
             f.write('border_redeem\n')
+            f.write(str(event.event.user_name) + "\n")
     elif event.event.reward.title.lower() == "drop all minecraft food":
         with open(FILE_PATH, 'w') as f:
             f.write('drop_food\n')
+            f.write(str(event.event.user_name) + "\n")
 
 async def on_subscribe(event: ChannelSubscribeEvent):
-    with open(FILE_PATH, 'w') as f:
-        f.write('subscription\n')
+    if not event.event.is_gift:
+        with open(FILE_PATH, 'w') as f:
+            f.write('subscription\n')
+            f.write(str(event.event.user_name) + "\n")
 
 async def on_renewal(event: ChannelSubscriptionMessageEvent):
     with open(FILE_PATH, 'w') as f:
-        f.write('resubscription\n')
+        f.write('subscription\n')
+        f.write(str(event.event.user_name) + "\n")
 
 async def on_gift_sub(event: ChannelSubscriptionGiftEvent):
     with open(FILE_PATH, 'w') as f:
         f.write('gift_sub\n')
+        f.write(str(event.event.user_name) + "\n")
         f.write(str(event.event.total) + "\n")
 
 # ----- Main Async Routine -----
