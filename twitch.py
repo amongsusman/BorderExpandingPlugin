@@ -6,6 +6,7 @@ from twitchAPI.object.eventsub import (
     ChannelPointsCustomRewardRedemptionAddEvent,
     ChannelSubscribeEvent,
     ChannelSubscriptionGiftEvent,
+    ChannelSubscriptionMessageEvent
 )
 
 CLIENT_ID = ''
@@ -27,6 +28,10 @@ async def on_redeem(event: ChannelPointsCustomRewardRedemptionAddEvent):
 async def on_subscribe(event: ChannelSubscribeEvent):
     with open(FILE_PATH, 'w') as f:
         f.write('subscription\n')
+
+async def on_renewal(event: ChannelSubscriptionMessageEvent):
+    with open(FILE_PATH, 'w') as f:
+        f.write('resubscription\n')
 
 async def on_gift_sub(event: ChannelSubscriptionGiftEvent):
     with open(FILE_PATH, 'w') as f:
