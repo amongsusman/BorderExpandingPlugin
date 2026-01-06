@@ -18,6 +18,7 @@ Java 21 - https://adoptium.net/en-GB/temurin/releases (once downloaded, open the
 # Commands (for everytime you need to start a new world)
 1. /teleport -> teleports you to a random spot in the world
 2. /startborder -> sets up the 3x3 border at the beginning (do once you found a good spot to start)
+3. /borderstats -> shows a list of what expanded the border and by how much
 
 # Prerequisites for the Twitch Part
 You need to download the following:
