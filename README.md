@@ -3,8 +3,8 @@ This is a border expanding plugin made for Roman @ihavenoeyebrows to use for his
 
 # Prerequisites for the Plugin
 You need to download the following:
-Java 21 - https://adoptium.net/en-GB/temurin/releases (once downloaded, open the file and follow the Setup Wizard instructions)
-Paper Minecraft Server - https://papermc.io/downloads/paper
+1. Java 21 - https://adoptium.net/en-GB/temurin/releases (once downloaded, open the file and follow the Setup Wizard instructions)
+2. Paper Minecraft Server - https://papermc.io/downloads/paper
 
 # Instructions (for everytime you need to start a new world)
 1. Download the jar file.
