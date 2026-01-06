@@ -4,20 +4,24 @@ This is a border expanding plugin made for Roman @ihavenoeyebrows to use for his
 # Prerequisites for the Plugin
 You need to download the following:
 Java 21 - https://adoptium.net/en-GB/temurin/releases (once downloaded, open the file and follow the Setup Wizard instructions)
+Paper Minecraft Server - https://papermc.io/downloads/paper
 
 # Instructions (for everytime you need to start a new world)
-1. Download the zip file and extract all.
-2. Press windows button and type in cmd then press enter (your Command Prompt should pop up)
-3. In the command prompt, if it says something like C:\Users\roman, you need to change directory (folder) until it says something like \MinecraftServer at the end.
-4. To do this, use the commands and press enter after each command: cd Downloads, cd MinecraftServer (depends on where your MinecraftServer unzipped folder is.
-5. Finally, to boot up the server, type in the exact command: java -jar paper.jar
-6. Boot up minecraft and go to multiplayer, and add server: server address is localhost
-7. Once the server has booted up, you should be able to join. Enjoy!
-8. (P.S, if you die delete all files besides eula.txt, plugins folder (you have to delete everything besides the BorderExpand jar file inside that folder), and paper.jar)
+1. Download the jar file.
+2. Make a folder in Downloads called Captive.
+3. Drag twitch.py and the BorderExpand-1.0.jar file into the Captive folder.
+4. Rename the paper download to paper.
+5. Insert paper.jar into the Captive folder as well (you should have twitch.py, the border expand jar, and the paper.jar).
+6. Make a new folder inside Captive called plugins and drag BorderExpand-1.0.jar into plugins.
+7. Run the following command after opening command prompt: cd Downloads && cd Captive && java -jar paper.jar
+8. If asked to agree to eula, open eula.txt and change false to true (then save) and do java -jar paper.jar afterwards in command prompt (ignore if eula.txt is already true). 
+9. Boot up minecraft and go to multiplayer, and add server: server address is localhost
+10. Once the server has booted up, you should be able to join. Enjoy!
+11. (P.S, if you die delete all files besides eula.txt, plugins folder (you have to delete everything besides the BorderExpand jar file inside that folder), and paper.jar)
 
 # Commands (for everytime you need to start a new world)
 1. /teleport -> teleports you to a random spot in the world
-2. /startborder -> sets up the 3x3 border at the beginning (do once you found a good spot to start)
+2. /startborder -> sets up the 1x1 border at the beginning (do once you found a good spot to start)
 3. /borderstats -> shows a list of what expanded the border and by how much
 
 # Prerequisites for the Twitch Part
