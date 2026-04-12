@@ -1,5 +1,5 @@
 # Description
-This is a border expanding plugin made for Roman @ihavenoeyebrows to use for his Hardcore Captive Minecraft gameplay.
+This is a border expanding plugin used for Twitch streamers to expand their border size based on the amount of achievements they get or by Twitch redeem methods.
 
 # Prerequisites for the Plugin
 You need to download the following:
